@@ -1,0 +1,230 @@
+{
+  "intents": [
+    {
+      "tag": "weather",
+      "patterns": [
+        "What's the weather like today?",
+        "Can you tell me the current weather?",
+        "Is it going to rain today?",
+        "What's the forecast for tomorrow?",
+        "Tell me about the weather forecast."
+      ],
+      "responses": [
+        "Sure, let me check the weather for you.",
+        "One moment, I'll fetch the latest weather information.",
+        "Checking the weather forecast for you."
+      ]
+    },
+    {
+      "tag": "feedback",
+      "patterns": [
+        "I have some feedback.",
+        "Can I provide some feedback?",
+        "I want to give feedback.",
+        "Feedback",
+        "Suggestions"
+      ],
+      "responses": [
+        "We appreciate your feedback! Please feel free to share.",
+        "Your feedback is valuable to us. Let us know your thoughts.",
+        "Thank you for sharing your feedback with us.",
+        "Feedback and suggestions are always welcome. Please share your thoughts."
+      ]
+    },
+    {
+      "tag": "courses_registration",
+      "patterns": [
+        "How can I register for courses?",
+        "Registration process for courses",
+        "Enrollment in courses",
+        "Course registration",
+        "How to sign up for classes"
+      ],
+      "responses": [
+        "To register for courses, you can visit the student portal and follow the registration instructions.",
+        "Course registration can be done through the student portal. Let me know if you need assistance with the process.",
+        "You can enroll in courses through the student portal. If you need guidance, feel free to ask.",
+        "Course registration instructions are available on the student portal. If you encounter any issues, I'm here to help."
+      ]
+    },
+    {
+      "tag": "ask_for_help",
+      "patterns": [
+        "Can you help me?",
+        "I need assistance",
+        "Can you provide guidance?",
+        "I'm not sure what to do",
+        "I could use some help",
+        "Do you have any advice for me?",
+        "I'm feeling lost and need direction"
+      ],
+      "responses": [
+        "Of course, I'm here to help! Please let me know what you need assistance with. 😊",
+        "Absolutely, I'm here to assist you. Please tell me how I can help. 🌟",
+        "Certainly! I'm here to provide guidance and support. What can I assist you with? 🤝",
+        "You've come to the right place. Let me know what you're looking for help with. 👍",
+        "No problem, I'm here to lend a hand. Just tell me what you're struggling with. 🤗",
+        "I'm here to support you. What's the issue or concern you're facing? 🤔",
+        "Don't worry, I'm here to offer assistance. Please share more details about what you're facing. 🌈"
+      ]
+    },    
+    {
+      "tag": "creation",
+      "patterns": [
+        "Who made you?",
+        "Who created you?",
+        "Who developed you?",
+        "How were you made?",
+        "Tell me about your creation."
+      ],
+      "responses": [
+        "I was crafted by a talented team of BSCS-4A students – Karen, Alexis, and Joeven – as part of their undergraduate thesis project. 👩‍🎓👨‍🎓",
+        "My creation is the result of the hard work and dedication of Karen, Alexis, and Joeven, BSCS-4A students, who developed me for their thesis. 🛠️",
+        "I owe my existence to Karen, Alexis, and Joeven, BSCS-4A students, who designed and built me as part of their undergraduate thesis work. 🧠",
+        "Karen, Alexis, and Joeven, BSCS-4A students, are the brilliant minds behind my creation. They developed me for their undergraduate thesis project. 🌟"
+      ]
+    },    
+    {
+      "tag": "where_are_you",
+      "patterns":[
+        "Where are you",
+        "What's your location",
+        "Tell me your current place",
+        "Are you physically located somewhere",
+        "Give me your whereabouts"
+      ],
+      "responses":[
+        "I'm just a virtual AI, so I don't have a physical location. 👾",
+        "I exist in the digital realm, so I don't have a specific location. 🌐",
+        "I don't have a physical presence, so I can't be anywhere. 💨",
+        "I'm not located anywhere in the real world; I'm here to help you online. 🌍"
+      ]
+    },
+    {
+        "tag": "greetings",
+        "patterns": [
+          "Hello",
+          "Hi",
+          "Hey",
+          "Greetings",
+          "Good day"
+        ],
+        "responses": [
+          "Hello! I'm BUBot, your virtual assistant. How can I assist you today? 😊",
+          "Hi there! I'm BUBot, a virtual assistant here to help you. How can I be of service? 👋",
+          "Hey! I'm BUBot, and I'm here to assist you. How can I help you today? 🌞",
+          "Greetings! I'm BUBot, your virtual assistant. What can I do for you today? 🌼",
+          "Good day! I'm BUBot, here to assist you. How can I be of help? ☀️"
+        ]
+    },
+    {
+      "tag": "funny",
+      "patterns": [
+        "Tell me a joke!",
+        "Tell me something funny!",
+        "Do you know a joke?"
+      ],
+      "responses": [
+        "Sure, here's a joke for you: Why did the hipster burn his mouth? He drank the coffee before it was cool. 😄",
+        "Here's a lighthearted one: What did the buffalo say when his son left for college? Bison. 🦬",
+        "Ready for another joke? Why don't scientists trust atoms? Because they make up everything! 🧪",
+        "Sure thing! Why don't some couples go to the gym? Because some relationships don't work out! 💔",
+        "Need a chuckle? Parallel lines have so much in common. It's a shame they'll never meet. 📏",
+        "I've got one for you: Did you hear about the claustrophobic astronaut? He just needed a little space. 🚀"
+      ]
+    },
+    {
+      "tag": "department_list",
+      "patterns": [
+        "What are the different departments in BUP?",
+        "Can you provide me with a list of departments at BUP?",
+        "Tell me about the departments at BUP.",
+        "List the academic departments at BUP."
+      ],
+      "responses": [
+        "Certainly, here are the department names without the courses: \nTEACHER EDUCATION DEPARTMENT \nCOMPUTER STUDIES DEPARTMENT \nENGINEERING DEPARTMENT \nNURSING DEPARTMENT \nTECHNOLOGY & ENTREPRENEURSHIP DEPARTMENT"
+      ]
+    },
+    {
+      "tag": "department_courses",
+      "patterns": [
+        "What are the courses offered?",
+        "Can you provide me with a list of courses offered?",
+        "Tell me about the courses offered.",
+        "List the courses offered.",
+        "what are the courses"
+      ],
+      "responses": [
+        "BSIT\\nBSCS\\nBSIS\\"
+      ]
+    },
+    {
+      "tag": "dean",
+      "patterns": [
+          "Who is the dean of your campus?",
+          "Do you know who is the dean?",
+          "Who leads the campus?",
+          "Tell me about the dean"
+      ],
+      "responses": [
+          "Our campus is led by Dr. Mary Joy Catangui. They're dedicated to student success and a positive environment. 🎓👩‍💼",
+          "Dr. Mary Joy Catangui is our campus dean, fostering a vibrant academic community. 👩‍🏫🌟",
+          "Meet our campus leader, Dr. Mary Joy Catangui, with extensive experience and a commitment to excellence. 🌟👩‍🎓",
+          "Dr. Mary Joy Catangui, our campus dean, focuses on academic excellence and student opportunities. 👩‍🔬📚"
+      ]
+    },
+    {
+      "tag": "who_are_you",
+      "patterns": [
+        "Who are you?", 
+        "What are you?", 
+        "Tell me about yourself.",
+        "What is your name?", 
+        "Who are you called?"
+      ],
+      "responses": [
+        "I'm BUBot, your virtual assistant designed to simplify tasks and provide accurate information. I'm here to assist you! 👋🤖",
+        "Greetings! I'm BUBot, a virtual assistant here to help with tasks and deliver accurate answers. 🌟🤖",
+        "Hello, I'm BUBot, a virtual assistant here to streamline tasks and offer accurate responses. 🤖🌈",
+        "Hello! I'm BUBot, your virtual assistant. I'm here to help you with various tasks and provide accurate information. 🤖💡",
+        "Greetings! I'm BUBot, your virtual assistant designed to assist with tasks and deliver accurate responses. 🌟🤖",
+        "Hello, I'm BUBot, here to simplify tasks and provide accurate answers to your queries. 🤖🌞",
+        "Hi there! I'm BUBot, a virtual assistant created to make your tasks easier and provide accurate information. 🤖🌟",
+        "Greetings, I'm BUBot, your virtual assistant designed to simplify tasks and provide accurate responses. 🤖🌼",
+        "Hello! I'm BUBot, your virtual assistant crafted to make tasks easier and provide accurate information. 🤖🌟",
+        "Hi, I'm BUBot, your virtual assistant. My purpose is to assist with tasks and provide accurate information. 🤖🚀"
+      ]
+    },
+    {
+      "tag": "goodbye",
+      "patterns": [
+        "Goodbye", 
+        "Bye", 
+        "See you later", 
+        "See you soon", 
+        "Talk to you later", 
+        "I'll talk to you later", 
+        "I'll talk to you soon", 
+        "I'll see you later", 
+        "I'll see you soon", 
+        "Later", 
+        "See you", 
+        "Talk to you soon"
+      ],
+      "responses": [
+        "Goodbye! I hope I was able to help you today. 👋😊",
+        "Bye! I hope I was able to help you today. 👋😊",
+        "See you later! I hope I was able to help you today. 👋🌟",
+        "See you soon! I hope I was able to help you today. 👋🌞",
+        "Talk to you later! I hope I was able to help you today. 👋📞",
+        "I'll talk to you later! I hope I was able to help you today. 👋📞",
+        "I'll talk to you soon! I hope I was able to help you today. 👋📞",
+        "I'll see you later! I hope I was able to help you today. 👋🌟",
+        "I'll see you soon! I hope I was able to help you today. 👋🌞",
+        "Later! I hope I was able to help you today. 👋😊",
+        "See you! I hope I was able to help you today. 👋🌟",
+        "Talk to you soon! I hope I was able to help you today. 👋📞"
+      ]
+    }
+  ]
+}
