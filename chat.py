@@ -7,7 +7,7 @@ from nltk_utils import bag_of_words, tokenize
 
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
-file_path = r'C:\Users\alexi\OneDrive\Desktop\Documents\BU_AI-with-Flask\intents.json' #replace with your own path, yung path ng intents.json sa files mo, right click, copy as path
+file_path = r'/home/user/idx/intents.json' #replace with your own path, yung path ng intents.json sa files mo, right click, copy as path
 with open(file_path, 'r', encoding='utf-8') as f:
     intents = json.load(f)
 

@@ -155,7 +155,9 @@
         "what are the courses"
       ],
       "responses": [
-        "BSIT\\nBSCS\\nBSIS\\"
+        "BSIT",
+        "BSCS",
+        "BSIS"
       ]
     },
     {

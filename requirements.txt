@@ -1,0 +1,9 @@
+flask
+nltk
+torch
+pyspellchecker
+numpy
+scikit-learn
+pandas
+seaborn
+matplotlib
