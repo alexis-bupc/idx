@@ -1,0 +1,104 @@
+/* Reset default margin and padding */
+body, p, form {
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.copyr {
+    justify-content: center;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+#head {
+    padding: 0;
+    display: table;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#head > img {
+    width: 70%;
+    height: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+}
+
+/* Set a background color for the body */
+body {
+    background-color: #171717; /* Set body background color to hex #171717 */
+    font-family: Arial, sans-serif;
+    color: #F44C1C; /* Set text color to hex #F44C1C */
+}
+
+/* Style the chat container */
+.chat-container {
+    width: 80%;
+    max-width: 700px;
+    height: 600px;
+    overflow-y: auto;
+    margin: 20px auto; /* Add margin to create space */
+    padding: 15px;
+    background-color: #F44C1C; /* Set background color */
+    border-radius: 8px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    color: #171717; /* Set text color */
+}
+
+
+/* Style chat bubbles */
+.chat-bubble {
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.user-bubble {
+    background-color: #cce6ff;
+    align-self: flex-end;
+    margin-left: auto;
+    max-width: fit-content;
+}
+
+.bot-bubble {
+    background-color: #e0f4d6;
+    align-self: flex-start;
+    margin-right: auto;
+    max-width: 70%;
+}
+
+/* Style the chat input form */
+.chat-form {
+    display: flex;
+    margin-top: 20px;
+}
+
+#user-input {
+    justify-content: center;
+    max-width: 650px;
+    height: 30px;
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px 0 0 5px;
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}

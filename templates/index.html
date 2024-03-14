@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+    <title id="title">BU-AI Chatbot</title>
+</head>
+<body>
+    <div id="head">
+        <h1>Welcome to BU-AI Chatbot</h1> <!-- Big header -->
+        <!-- <img src="{{ url_for('static', filename='bot.jpg') }}" alt="csc_bot"> -->
+    </div>
+    <div id="chat-container" class="chat-container"> </div>
+    <form id="chat-form" class="chat-form">
+        <input type="text" id="user-input" placeholder="Type your message here">
+        <button type="submit">Send</button>
+    </form>
+    <script>
+        
+        const chatForm = document.getElementById('chat-form');
+        const userInput = document.getElementById('user-input');
+        const chatContainer = document.getElementById('chat-container');
+        
+        const welcomeMessage = `Welcome to CSCAssistant, your friendly guide to all things related CSC Concerns 🌐🤖\nFeel free to ask away – I'm here to help you navigate through your questions! 🎓💻📚`;
+
+        // Display the welcome message as a chat bubble
+        const welcomeBubble = document.createElement('div');
+        welcomeBubble.classList.add('chat-bubble', 'bot-bubble');
+        welcomeBubble.textContent = welcomeMessage;
+        chatContainer.appendChild(welcomeBubble);
+
+        const isMobile = window.innerWidth <= 600; // Check for mobile screen size
+
+        chatForm.addEventListener('submit', async (e) => {
+            e.preventDefault();
+            const userMessage = userInput.value;
+            if (!userMessage) return;
+
+            chatContainer.innerHTML += `<div class="chat-bubble user-bubble"> ${userMessage}</div>`;
+            userInput.value = '';
+
+            const typingBubble = `<div class="chat-bubble bot-bubble typing-bubble">BU-AI is typing...</div>`;
+            const botResponseBubble = `<div class="chat-bubble bot-bubble">BU-AI: ${userMessage}</div>`;
+
+            chatContainer.innerHTML += typingBubble;
+
+            const response = await fetch('/get_response', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/x-www-form-urlencoded'
+                },
+                body: `user_input=${encodeURIComponent(userMessage)}`
+            });
+
+            const jsonResponse = await response.json();
+            const botMessage = jsonResponse.response;
+
+            chatContainer.removeChild(chatContainer.lastChild); // Remove typing bubble
+            chatContainer.innerHTML += botResponseBubble;
+
+            // Simulate typing effect for bot's response
+            await typeBotResponse(botMessage);
+        });
+
+        async function typeBotResponse(message) {
+            const botResponseBubble = document.querySelector('.bot-bubble:last-child');
+
+            for (let i = 0; i <= message.length; i++) {
+                await new Promise(resolve => setTimeout(resolve, isMobile ? 30 : 10)); // Adjust timing for mobile
+                botResponseBubble.textContent = `BU-AI: ${message.slice(0, i)}`;
+            }
+        }
+    </script>
+    <div id="copyr" class="copyr">Copyright © 2023 CSCAssistant</div>
+</body>
+</html>
